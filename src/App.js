@@ -7,7 +7,10 @@ import Props from "./props";
 import logo from "./logo.svg";
 
 export function App() {
-  return <Props />;
+  return  (
+  <h1>sfksfkshdflkedhfefhglrfhfrg</h1>
+    <Props />;
+  ) 
 }
 
 export default App;

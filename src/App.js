@@ -17,6 +17,7 @@ export function App() {
 
   return (
     <div className="name">
+      <h1>Form</h1>
       <form onSubmit={getformdata}>
         <input
           type="text"
@@ -34,7 +35,12 @@ export function App() {
           <option value="">Rohit</option>
         </select>{" "}
         <br /> <br />
-        <input type="checkbox" onChange={(e) => {settnc(e.target.checked) }} />
+        <input
+          type="checkbox"
+          onChange={(e) => {
+            settnc(e.target.checked);
+          }}
+        />
         <span>Terms And Conditions</span> <br /> <br />
         <button type="submit">Submit</button>
       </form>

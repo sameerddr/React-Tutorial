@@ -7,10 +7,17 @@ import Props from "./props";
 import logo from "./logo.svg";
 
 export function App() {
-  return  (
-  <h1>sfksfkshdflkedhfefhglrfhfrg</h1>
-    <Props />;
-  ) 
+  const [status, setstatus] = useState();
+
+  return (
+    <div className="name">
+      {status ? <h1>Hello</h1> : null}
+
+      <button onClick={() => setstatus(false)}>Hide</button>
+      <button onClick={() => setstatus(true)}>Show</button>
+      <button onClick={() => setstatus(!status)}>Toggle</button>
+    </div>
+  );
 }
 
 export default App;

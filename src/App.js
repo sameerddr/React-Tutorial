@@ -7,15 +7,37 @@ import Props from "./props";
 import logo from "./logo.svg";
 
 export function App() {
-  const [status, setstatus] = useState();
+  const [name, setname] = useState("");
+  const [tnc, settnc] = useState(false);
+  const [interest, setinterest] = useState("");
+  function getformdata(e) {
+    console.log(name, tnc, interest);
+    e.preventDeafault();
+  }
 
   return (
     <div className="name">
-      {status ? <h1>Hello</h1> : null}
-
-      <button onClick={() => setstatus(false)}>Hide</button>
-      <button onClick={() => setstatus(true)}>Show</button>
-      <button onClick={() => setstatus(!status)}>Toggle</button>
+      <form onSubmit={getformdata}>
+        <input
+          type="text"
+          placeholder="Enter Name"
+          onChange={(e) => setname(e.target.value)}
+        />{" "}
+        <br /> <br />
+        <select
+          onChange={(e) => {
+            setinterest(e.target.value);
+          }}
+        >
+          <option value="">Virat</option>
+          <option value="">Dhoni</option>
+          <option value="">Rohit</option>
+        </select>{" "}
+        <br /> <br />
+        <input type="checkbox" onChange={(e) => {settnc(e.target.checked) }} />
+        <span>Terms And Conditions</span> <br /> <br />
+        <button type="submit">Submit</button>
+      </form>
     </div>
   );
 }

@@ -11,7 +11,7 @@ export function App() {
   const [count, setcount] = useState(0);
   return (
     <div className="name">
-      <h1>Counter Project</h1>
+      <h1>Counter Project By </h1>
       <h1>{count}</h1>
       <button onClick={() => setcount(count - 1)}>Decrement</button>
       <button onClick={() => setcount(count + 1)}>Increment</button>

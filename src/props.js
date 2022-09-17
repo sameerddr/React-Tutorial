@@ -50,7 +50,6 @@
 //     </div>
 //   );
 // }
-
 // export default student;
 
 // for class component

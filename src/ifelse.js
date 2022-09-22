@@ -1,6 +1,6 @@
 import { useState } from "react";
 function Profile() {
-  //   const [loggedin, setloggedin] = useState(true);
+  // const [loggedin, setloggedin] = useState(true);
   const [loggedin, setloggedin] = useState();
   return (
     <div className="name">

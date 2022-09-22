@@ -5,7 +5,7 @@ import App from "./App";
 import User from "./users";
 import Event from "./event";
 import State from "./state";
-import Props from "./props";
+// import Props from "./props";
 import reportWebVitals from "./reportWebVitals";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));

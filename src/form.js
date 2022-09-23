@@ -6,10 +6,9 @@ import State from "./state";
 import Props from "./props";
 import logo from "./logo.svg";
 
-
 export function App() {
   function getformdata(e) {
-    e.preventDeafault();
+    e.preventDefault();
     console.log(name, tnc, interest);
   }
   const [name, setname] = useState("");

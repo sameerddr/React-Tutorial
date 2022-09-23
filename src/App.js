@@ -15,41 +15,7 @@ import "./App.css";
 // import Constrructor from "./lifecycle/Constrructor";
 // import Reuse from "./ReuseComponent/Reuse";
 function App() {
-  const Users = [
-    {
-      name: "sameer",
-      email: "sam@gmail.com",
-      contactus: "32656532465",
-    },
-    {
-      name: "aman",
-      email: "aman@gmail.com",
-      contactus: "32656532465",
-    },
-    {
-      name: "lokesh",
-      email: "lokesh@gmail.com",
-      contactus: "32656532465",
-    },
-    {
-      name: "manan",
-      email: "manan@gmail.com",
-      contactus: "32656532465",
-    },
-    {
-      name: "honey",
-      email: "honey@gmail.com",
-      contactus: "32656532465",
-    },
-  ];
-  return (
-    <div className="name">
-      <h1>Reusing Component Using List</h1>
-      {Users.map((item, i) => (
-        <Reuse data={item} />
-      ))}
-    </div>
-  );
+  return <div className="name"></div>;
 }
 
 export default App;

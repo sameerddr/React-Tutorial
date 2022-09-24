@@ -4,6 +4,7 @@ import Showtodo from "./Showtodo";
 function Todo() {
   const [task, settask] = useState("Add Your Task");
   const [data, setdata] = useState([]);
+  const [edit, setedit] = useState(false);
 
   function onChangeHandler(e) {
     // console.log(e.target.value);
@@ -19,31 +20,45 @@ function Todo() {
   }
   const deleteItem = (a) => {
     const finalData = data.filter((curEle, index) => {
-      console.log(curEle);
-      console.log(index);
+      // console.log(curEle);
+      // console.log(index);
       console.log(index !== a);
       return index !== a;
     });
     setdata(finalData);
   };
-
-  // function deleteItem(a, index) {
-  //   console.log(a);
-  //   console.log(index);
-  // }
+  const editItem = (a) => {
+    const finalData = data.filter((curEle, index) => {
+      // console.log(curEle);
+      // console.log(index);
+      console.log(index !== a);
+      if (index !== a) {
+        setedit(true);
+        settask(e.target.value);
+      }
+    });
+    setdata(finalData);
+  };
 
   return (
     <>
       <div className="container">
         <label>
-          Your Todo{" "}
+          Your Todo
           <input type="text" value={task} onChange={onChangeHandler} />
         </label>
         <button type="submit" onClick={submit}>
           Create Todo
         </button>
         {data.map((val, index) => {
-          return <Showtodo id={index} task={val} onSelcet={deleteItem} />;
+          return (
+            <Showtodo
+              id={index}
+              task={val}
+              onSelcet={deleteItem}
+              onDel={editItem}
+            />
+          );
         })}
       </div>
     </>

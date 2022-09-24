@@ -12,6 +12,13 @@ function Showtodo(props) {
         >
           Drop Todo
         </button>
+        <button
+          onClick={() => {
+            props.onDel(props.id);
+          }}
+        >
+          Edit Todo
+        </button>
       </div>
     </>
   );

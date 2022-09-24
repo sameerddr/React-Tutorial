@@ -28,8 +28,8 @@ function Todo() {
     setdata(finalData);
   };
 
-  function editItem(onChangeHandler) {
-    onChangeHandler();
+  function editItem() {
+    console.log("trying");
   }
 
   return (

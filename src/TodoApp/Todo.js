@@ -2,7 +2,7 @@ import React from "react";
 import { useState } from "react";
 import Showtodo from "./Showtodo";
 function Todo() {
-  const [task, settask] = useState("Add Your Task");
+  const [task, settask] = useState("");
   const [data, setdata] = useState([]);
   const [edit, setedit] = useState(false);
 
@@ -27,18 +27,10 @@ function Todo() {
     });
     setdata(finalData);
   };
-  const editItem = (a) => {
-    const finalData = data.filter((curEle, index) => {
-      // console.log(curEle);
-      // console.log(index);
-      console.log(index !== a);
-      if (index !== a) {
-        setedit(true);
-        settask(e.target.value);
-      }
-    });
-    setdata(finalData);
-  };
+
+  function editItem(onChangeHandler) {
+    onChangeHandler();
+  }
 
   return (
     <>
@@ -53,6 +45,7 @@ function Todo() {
         {data.map((val, index) => {
           return (
             <Showtodo
+              key={index}
               id={index}
               task={val}
               onSelcet={deleteItem}

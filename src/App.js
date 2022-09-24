@@ -14,8 +14,13 @@ import "./App.css";
 // import FunProps from "./FunProps";
 // import Constrructor from "./lifecycle/Constrructor";
 // import Reuse from "./ReuseComponent/Reuse";
+import ValidForm from "./Form-Vald/ValidForm";
 function App() {
-  return <div className="name"></div>;
+  return (
+    <div className="name">
+      <ValidForm />
+    </div>
+  );
 }
 
 export default App;

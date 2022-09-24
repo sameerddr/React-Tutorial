@@ -14,11 +14,14 @@ import "./App.css";
 // import FunProps from "./FunProps";
 // import Constrructor from "./lifecycle/Constrructor";
 // import Reuse from "./ReuseComponent/Reuse";
-import ValidForm from "./Form-Vald/ValidForm";
+// import ValidForm from "./Form-Vald/ValidForm";
+import Showtodo from "./TodoApp/Showtodo";
+import Todo from "./TodoApp/Todo";
 function App() {
   return (
     <div className="name">
-      <ValidForm />
+      <h1>Todo App By SameerDDR</h1>
+      <Todo></Todo>
     </div>
   );
 }

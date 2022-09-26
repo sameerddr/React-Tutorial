@@ -17,11 +17,13 @@ import "./App.css";
 // import ValidForm from "./Form-Vald/ValidForm";
 // import Showtodo from "./TodoApp/Showtodo";
 // import Todo from "./TodoApp/Todo";
-import Pure from "./purecomponent/Pure";
+// import Pure from "./purecomponent/Pure";
+
 function App() {
   return (
     <div className="name">
-      <Pure />
+      <h1>User</h1>
+      <h1></h1>
     </div>
   );
 }

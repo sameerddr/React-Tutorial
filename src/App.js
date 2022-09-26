@@ -15,13 +15,13 @@ import "./App.css";
 // import Constrructor from "./lifecycle/Constrructor";
 // import Reuse from "./ReuseComponent/Reuse";
 // import ValidForm from "./Form-Vald/ValidForm";
-import Showtodo from "./TodoApp/Showtodo";
-import Todo from "./TodoApp/Todo";
+// import Showtodo from "./TodoApp/Showtodo";
+// import Todo from "./TodoApp/Todo";
+import Pure from "./purecomponent/Pure";
 function App() {
   return (
     <div className="name">
-      <h1>Todo App By SameerDDR</h1>
-      <Todo></Todo>
+      <Pure />
     </div>
   );
 }

@@ -23,7 +23,6 @@ function App() {
   return (
     <div className="name">
       <h1>User</h1>
-      <h1></h1>
     </div>
   );
 }

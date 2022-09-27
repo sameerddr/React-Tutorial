@@ -22,7 +22,7 @@ import "./App.css";
 function App() {
   return (
     <div className="name">
-      <h1>git </h1>
+      <h1>gits </h1>
     </div>
   );
 }

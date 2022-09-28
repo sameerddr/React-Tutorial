@@ -20,7 +20,9 @@ import "./App.css";
 // import Pure from "./purecomponent/Pure";
 
 function App() {
-  return <div className="name"></div>;
+  return <div className="name">
+    
+  </div>;
 }
 
 export default App;

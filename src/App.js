@@ -1,5 +1,5 @@
 import React from "react";
-import { useEffect, useState } from "react";
+import { useEffect, useState, useRef } from "react";
 import "./App.css";
 // import PropsUseEffect from "./hooks/PropsUseEffect";
 // import Form from "./Form";
@@ -20,9 +20,9 @@ import "./App.css";
 // import Pure from "./purecomponent/Pure";
 
 function App() {
+    const inputRef = useRef(null);
   return <div className="name">
-    
-  </div>;
+    </div>;
 }
 
 export default App;

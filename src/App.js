@@ -1,6 +1,6 @@
-import React from "react";
+import React, { createContext } from "react";
 import axios from "axios";
-import { useEffect, useState, useRef } from "react";
+import { useEffect, useState, useRef, useContext } from "react";
 import "./App.css";
 // import PropsUseEffect from "./hooks/PropsUseEffect";
 // import Form from "./Form";
@@ -22,13 +22,25 @@ import "./App.css";
 // import ForwardRefUser from "./hooks/ForwardRefUser";
 // import HOC from "./HOC/HOC";
 // import Weather from "./Weather/Weather";
-import Git from "./GitUser/Git";
+// import Git from "./GitUser/Git";
+import ChildA from "./UseContext/ChildA";
+const data = createContext();
+const data1 = createContext();
 function App() {
+  // Usecontext - create,provider,useContext
+
+  const name = "sameer";
+  const gender = "male";
   return (
     <div className="name">
-      <Git />
+      <data.Provider value={name}>
+        <data1.Provider value={gender}>
+          <ChildA></ChildA>
+        </data1.Provider>
+      </data.Provider>
     </div>
   );
 }
 
 export default App;
+export { data, data1 };

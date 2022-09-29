@@ -23,24 +23,15 @@ import "./App.css";
 // import HOC from "./HOC/HOC";
 // import Weather from "./Weather/Weather";
 // import Git from "./GitUser/Git";
-import ChildA from "./UseContext/ChildA";
-const data = createContext();
-const data1 = createContext();
-function App() {
-  // Usecontext - create,provider,useContext
+// import ChildA from "./UseContext/ChildA";
+import Test from "./test/Test";
 
-  const name = "sameer";
-  const gender = "male";
+function App() {
   return (
-    <div className="name">
-      <data.Provider value={name}>
-        <data1.Provider value={gender}>
-          <ChildA></ChildA>
-        </data1.Provider>
-      </data.Provider>
+    <div>
+      <Test />
     </div>
   );
 }
 
 export default App;
-export { data, data1 };

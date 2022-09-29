@@ -18,23 +18,11 @@ import "./App.css";
 // import Showtodo from "./TodoApp/Showtodo";
 // import Todo from "./TodoApp/Todo";
 // import Pure from "./purecomponent/Pure";
+// import ForwardRefUser from "./hooks/ForwardRefUser";
+// import HOC from "./HOC/HOC";
 
 function App() {
-  const inputRef = useRef(null);
-
-  function controlhandle() {
-    inputRef.current.style.color = "red";
-    inputRef.current.style.backgroundColor = "blue";
-    inputRef.current.focus();
-  }
-
-  return (
-    <div className="name">
-      <h1>UseRef</h1>
-      <input type="text" ref={inputRef} />
-      <button onClick={controlhandle}>Handle Input</button>
-    </div>
-  );
+  return <div className="name"></div>;
 }
 
 export default App;

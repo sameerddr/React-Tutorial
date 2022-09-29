@@ -25,11 +25,13 @@ import "./App.css";
 // import Git from "./GitUser/Git";
 // import ChildA from "./UseContext/ChildA";
 import Test from "./test/Test";
+import Api from "./test/Api";
 
 function App() {
   return (
     <div>
-      <Test />
+      {/* <Test /> */}
+      <Api />
     </div>
   );
 }

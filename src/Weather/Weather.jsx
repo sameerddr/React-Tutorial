@@ -26,9 +26,6 @@ const Weather = () => {
 
   const handleClick = (e) => {
     e.preventDefault();
-    // steps:
-    // - call weather api with the entered city
-    // - save api response in weatherData state
     getWeatherData(city);
   };
 
@@ -38,7 +35,7 @@ const Weather = () => {
         placeholder="City Name"
         onChange={(e) => setCity(e.target.value)}
       />{" "}
-      <button onClick={handleClick}> Fetch </button>
+      <button onClick={handleClick}> Fetch </button>{" "}
       {weatherData.location ? (
         <p> Latitude: {weatherData.location.lat} </p>
       ) : (

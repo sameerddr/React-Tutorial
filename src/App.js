@@ -1,4 +1,5 @@
 import React from "react";
+import axios from "axios";
 import { useEffect, useState, useRef } from "react";
 import "./App.css";
 // import PropsUseEffect from "./hooks/PropsUseEffect";
@@ -20,9 +21,14 @@ import "./App.css";
 // import Pure from "./purecomponent/Pure";
 // import ForwardRefUser from "./hooks/ForwardRefUser";
 // import HOC from "./HOC/HOC";
-
+// import Weather from "./Weather/Weather";
+import Git from "./GitUser/Git";
 function App() {
-  return <div className="name"></div>;
+  return (
+    <div className="name">
+      <Git />
+    </div>
+  );
 }
 
 export default App;

@@ -11,8 +11,6 @@ function Api() {
       const dataApi = await axios.get(
         "https://jsonplaceholder.typicode.com/posts"
       );
-      // console.log(dataApi);
-      // console.log(dataApi.data[0].body);
       setData([Data, ...dataApi.data]);
       setfilterdata([Data, ...dataApi.data]);
     } catch {
@@ -26,19 +24,12 @@ function Api() {
         return post.title.includes(search);
       }
     });
-    console.log(afterFilterData);
     setfilterdata(afterFilterData);
-    // setsearch(afterFilterData);
   }, [search]);
 
   useEffect(() => {
     getapi();
-    console.log("hadha");
   }, []);
-
-  // useEffect(() => {
-  //   console.log(Data);
-  // }, [Data]);
 
   return (
     <div>
@@ -46,11 +37,11 @@ function Api() {
       <input
         type="text"
         placeholder="Enter The Text"
-        // value={search}
-        onChange={(e) => {
+        onClick={(e) => {
           setsearch(e.target.value);
         }}
       />
+      <button>Search</button>
       {filterdata?.map((item) => (
         <>
           <div>

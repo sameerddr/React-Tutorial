@@ -47,7 +47,7 @@ function Api() {
           <div>
             <h1>ID-: {item.id}</h1>
             <h2> TITLE-: {item.title}</h2>
-            {/* <h4> Body-: {item.body}</h4> */}
+            <h4> Body-: {item.body}</h4>
           </div>
         </>
       ))}

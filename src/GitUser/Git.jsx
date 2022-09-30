@@ -31,20 +31,21 @@ function Git() {
 
   return (
     <div>
-      <h1>Search Your Git Profile </h1>
+      <h1> Search Your Git Profile </h1>{" "}
       <div className="container">
         <input
           type="text"
           placeholder="Type The Username"
           onChange={(e) => setuserdata(e.target.value)}
-        />
+        />{" "}
         <button type="submit" onClick={handleSubmit}>
-          Search
-        </button>
-      </div>
+          Search{" "}
+        </button>{" "}
+      </div>{" "}
       <div className="print">
-        <h1> The Username You Are Searching For -: {userdata}</h1>
+        <h1> The Username You Are Searching For -: {userdata} </h1>{" "}
         <div className="box">
+          {" "}
           {print.bio ? (
             <p> Bio: {print.bio} </p>
           ) : (
@@ -61,7 +62,7 @@ function Git() {
             <p> Please enter User name. </p>
           )}{" "}
           {print.repos_url ? (
-            <p> repos_url : {print.repos_url} </p>
+            <p> repos_url: {print.repos_url} </p>
           ) : (
             <p> Please enter User name. </p>
           )}{" "}
@@ -73,8 +74,8 @@ function Git() {
           ) : (
             <p> Please enter User name. </p>
           )}{" "}
-        </div>
-      </div>
+        </div>{" "}
+      </div>{" "}
     </div>
   );
 }

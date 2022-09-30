@@ -24,13 +24,12 @@ import "./App.css";
 // import Weather from "./Weather/Weather";
 // import Git from "./GitUser/Git";
 // import ChildA from "./UseContext/ChildA";
-import Test from "./test/Test";
+// import Test from "./test/Test";
 import Api from "./test/Api";
 
 function App() {
   return (
     <div>
-      {/* <Test /> */}
       <Api />
     </div>
   );

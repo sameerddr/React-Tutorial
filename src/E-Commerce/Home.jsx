@@ -52,3 +52,7 @@ function Home() {
 // https://fakestoreapi.com/products
 
 export default Home;
+
+// How to connect the home page to navbar link
+// how to set the search in original search bar
+// products desgins correction

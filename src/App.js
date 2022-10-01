@@ -25,12 +25,12 @@ import "./App.css";
 // import Git from "./GitUser/Git";
 // import ChildA from "./UseContext/ChildA";
 // import Test from "./test/Test";
-import Api from "./test/Api";
-
+// import Api from "./test/Api";
+import Ecom from "./E-Commerce/Ecom";
 function App() {
   return (
     <div>
-      <Api />
+      <Ecom />
     </div>
   );
 }

@@ -1,0 +1,48 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.nav {
+    background-color: brown;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 60px;
+}
+
+.nav a {
+    text-decoration: none;
+    color: white;
+}
+
+.inputtext {
+    padding: 10px 20px;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+.moviedata {
+    background-color: blue;
+    text-align: center;
+}
+
+.boxx {
+    display: inline-block;
+    width: 350px;
+    max-height: 400px;
+    background-color: burlywood;
+    margin: 20px;
+}
+
+.showsum {
+    font-size: 10px;
+}
+
+.btn {
+    padding: 10px 20px;
+    background-color: white;
+    color: black;
+    cursor: pointer;
+}

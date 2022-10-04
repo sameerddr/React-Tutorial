@@ -26,11 +26,16 @@ import "./App.css";
 // import ChildA from "./UseContext/ChildA";
 // import Test from "./test/Test";
 // import Api from "./test/Api";
-import Ecom from "./E-Commerce/Ecom";
+// import Ecom from "./E-Commerce/Ecom";
+import Show from "./Movie/Show";
 function App() {
   return (
     <div>
-      <Ecom />
+      {
+        /* <Ecom /> */
+
+        <Show />
+      }
     </div>
   );
 }

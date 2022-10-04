@@ -1,4 +1,4 @@
-* {
+/* * {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
@@ -38,12 +38,13 @@
     border: 2px solid black;
     border-radius: 14px;
     padding: 3px 17px;
-}
+} */
 
 
 /* --------------------------------- main section home--------------------  */
 
-.container-main {
+
+/* .container-main {
     background-color: bisque;
     text-align: center;
 }
@@ -87,4 +88,4 @@
 .rating {
     font-size: 15px;
     text-transform: capitalize;
-}
+} */

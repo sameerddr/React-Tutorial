@@ -27,17 +27,10 @@ import "./App.css";
 // import Test from "./test/Test";
 // import Api from "./test/Api";
 // import Ecom from "./E-Commerce/Ecom";
-import Show from "./Movie/Show";
+// import Show from "./Movie/Show";
+import LoginForm from "./LogIn/LoginForm";
 function App() {
-  return (
-    <div>
-      {
-        /* <Ecom /> */
-
-        <Show />
-      }
-    </div>
-  );
+  return <div>{<LoginForm />}</div>;
 }
 
 export default App;

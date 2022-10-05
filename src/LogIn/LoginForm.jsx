@@ -2,7 +2,7 @@ import React, { useState } from "react";
 
 const LoginForm = () => {
   const [userName, setUserName] = useState("");
-  const [password, setPassword] = useState("");
+  // const [password, setPassword] = useState("");
   const [loggedInUser, setLoggedInUser] = useState(null);
 
   const validateAndSetUserName = (e) => {

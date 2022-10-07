@@ -1,0 +1,42 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    background-color: blueviolet;
+    padding: 40px 0px;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 25%;
+    margin-top: 2%;
+}
+
+label {
+    margin-right: 50px;
+    color: white;
+    font-size: 40px;
+}
+
+button {
+    padding: 10px 20px;
+    margin-top: 50px;
+    background-color: wheat;
+    color: red;
+    cursor: pointer;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+}
+
+input {
+    padding: 10px 20px;
+    border-radius: 10px;
+    font-size: 20px;
+}

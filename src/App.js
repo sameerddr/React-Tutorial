@@ -1,7 +1,13 @@
-import React, { createContext } from "react";
-import axios from "axios";
-import { useEffect, useState, useRef, useContext } from "react";
+// import React, { createContext } from "react";
+// import axios from "axios";
+// import { useEffect, useState, useRef, useContext } from "react";
+import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import "./App.css";
+import Home from "./Rout/Home";
+import Nav from "./Rout/Nav";
+import About from "./Rout/About";
+import Services from "./Rout/Services";
+import LoginForm from "./LogIn/LoginForm";
 // import PropsUseEffect from "./hooks/PropsUseEffect";
 // import Form from "./Form";
 // import User from "./users";
@@ -31,8 +37,23 @@ import "./App.css";
 // import LoginForm from "./LogIn/LoginForm";
 // import Usememo from "./Usememo/Usememo";
 // import Usereducer from "./UseReducer/Usereducer";
+
 function App() {
-  return <div className="sameer"></div>;
+  return (
+    <div className="sameer">
+      {/* <Nav></Nav>
+                  <div>
+                    <BrowserRouter>
+                      <Routes>
+                        <Route path="/home" element={<Home />}></Route>
+                        <Route path="/about" element={<About />}></Route>
+                        <Route path="/services" element={<Services />}></Route>
+                      </Routes>
+                    </BrowserRouter>
+                  </div> */}
+      <LoginForm />
+    </div>
+  );
 }
 
 export default App;

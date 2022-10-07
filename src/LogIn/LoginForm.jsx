@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-
+import "./LoginForm.css";
 const LoginForm = () => {
   const [userName, setUserName] = useState("");
   const [password, setPassword] = useState("");
@@ -92,28 +92,35 @@ const LoginForm = () => {
         </>
       ) : (
         <form method="POST">
-          <label htmlFor="username">Username</label>
-          <input
-            name="username"
-            id="username"
-            type="text"
-            onChange={(e) => validateAndSetUserName(e)}
-          />
-          <br />
-          <label htmlFor="password">Password</label>
-          <input
-            name="password"
-            type="password"
-            id="password"
-            onChange={(e) => validateAndSetPassword(e.target.value)}
-          />
-          <br />
-          <button
-            type="submit"
-            onClick={handleSubmit}
-            disabled={userName.length == 0 || password.length == 0}>
-            Login
-          </button>
+          <h1>Create Your Account Here</h1>
+          <div className="container">
+            <div className="box1">
+              <label htmlFor="username">Username</label>
+              <input
+                name="username"
+                id="username"
+                type="text"
+                onChange={(e) => validateAndSetUserName(e)}
+              />
+            </div>
+            <br />
+            <div className="box1">
+              <label htmlFor="password">Password</label>
+              <input
+                name="password"
+                type="password"
+                id="password"
+                onChange={(e) => validateAndSetPassword(e.target.value)}
+              />
+              <br />
+            </div>
+            <button
+              type="submit"
+              onClick={handleSubmit}
+              disabled={userName.length == 0 || password.length == 0}>
+              Login
+            </button>
+          </div>
         </form>
       )}
     </>

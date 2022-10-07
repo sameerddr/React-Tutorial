@@ -29,7 +29,7 @@ import "./App.css";
 // import Ecom from "./E-Commerce/Ecom";
 // import Show from "./Movie/Show";
 // import LoginForm from "./LogIn/LoginForm";
-// import Usememo from "./Usememo/Usememo";\
+// import Usememo from "./Usememo/Usememo";
 // import Usereducer from "./UseReducer/Usereducer";
 function App() {
   return <div className="sameer"></div>;

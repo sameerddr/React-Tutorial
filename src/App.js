@@ -28,15 +28,11 @@ import "./App.css";
 // import Api from "./test/Api";
 // import Ecom from "./E-Commerce/Ecom";
 // import Show from "./Movie/Show";
-import LoginForm from "./LogIn/LoginForm";
+// import LoginForm from "./LogIn/LoginForm";
 // import Usememo from "./Usememo/Usememo";\
 // import Usereducer from "./UseReducer/Usereducer";
 function App() {
-  return (
-    <div className="sameer">
-      <LoginForm />
-    </div>
-  );
+  return <div className="sameer"></div>;
 }
 
 export default App;

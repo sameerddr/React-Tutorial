@@ -51,7 +51,6 @@ function App() {
                       </Routes>
                     </BrowserRouter>
                   </div> */}
-      <LoginForm />
     </div>
   );
 }

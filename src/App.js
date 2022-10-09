@@ -4,10 +4,12 @@
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import "./App.css";
 import Home from "./Rout/Home";
-import Nav from "./Rout/Nav";
 import About from "./Rout/About";
-import Services from "./Rout/Services";
-import LoginForm from "./LogIn/LoginForm";
+import Contact from "./Rout/Contact";
+import Content from "./Rout/Content";
+import Header from "./Rout/Header";
+import User from "./Rout/User";
+// import LoginForm from "./LogIn/LoginForm";
 // import PropsUseEffect from "./hooks/PropsUseEffect";
 // import Form from "./Form";
 // import User from "./users";
@@ -41,16 +43,17 @@ import LoginForm from "./LogIn/LoginForm";
 function App() {
   return (
     <div className="sameer">
-      {/* <Nav></Nav>
-                  <div>
-                    <BrowserRouter>
-                      <Routes>
-                        <Route path="/home" element={<Home />}>Home</Route>
-                        <Route path="/about" element={<About />}></Route>
-                        <Route path="/services" element={<Services />}></Route>
-                      </Routes>
-                    </BrowserRouter>
-                  </div> */}
+      dsfbsfdf
+      <BrowserRouter>
+        <Header />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/about/:id" element={<Content />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/User:name" element={<User />} />
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

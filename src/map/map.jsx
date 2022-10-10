@@ -25,7 +25,7 @@ function App() {
     },
     {
       name: "aman",
-      // number: 3267,
+      number: 3267,
     },
   ];
   return (

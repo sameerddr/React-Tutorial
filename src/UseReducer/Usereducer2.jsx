@@ -1,7 +1,7 @@
 import React, { useReducer } from "react";
 
 function Usereducer2() {
-  var initialvalue = 0;
+  //   var initialvalue = 0;
 
   function reducer(state, action) {
     console.log(state, action);

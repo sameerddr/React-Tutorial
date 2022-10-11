@@ -3,12 +3,13 @@
 // import { useEffect, useState, useRef, useContext } from "react";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import "./App.css";
-import Home from "./Rout/Home";
-import About from "./Rout/About";
-import Contact from "./Rout/Contact";
-import Content from "./Rout/Content";
-import Header from "./Rout/Header";
-import User from "./Rout/User";
+import Usereducer2 from "./UseReducer/Usereducer2";
+// import Home from "./Rout/Home";
+// import About from "./Rout/About";
+// import Contact from "./Rout/Contact";
+// import Content from "./Rout/Content";
+// import Header from "./Rout/Header";
+// import User from "./Rout/User";
 // import LoginForm from "./LogIn/LoginForm";
 // import PropsUseEffect from "./hooks/PropsUseEffect";
 // import Form from "./Form";
@@ -39,11 +40,10 @@ import User from "./Rout/User";
 // import LoginForm from "./LogIn/LoginForm";
 // import Usememo from "./Usememo/Usememo";
 // import Usereducer from "./UseReducer/Usereducer";
-
 function App() {
   return (
     <div className="sameer">
-      <BrowserRouter>
+      {/* <BrowserRouter>
         <Header />
         <Routes>
           <Route path="/" element={<Home />} />
@@ -52,7 +52,8 @@ function App() {
           <Route path="/contact" element={<Contact />} />
           <Route path="/User:name" element={<User />} />
         </Routes>
-      </BrowserRouter>
+      </BrowserRouter> */}
+      <Usereducer2 />
     </div>
   );
 }

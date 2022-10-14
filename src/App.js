@@ -3,7 +3,8 @@
 // import { useEffect, useState, useRef, useContext } from "react";
 import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
 import "./App.css";
-import Usereducer2 from "./UseReducer/Usereducer2";
+import Child from "./ContextAPI/Child";
+// import Usereducer2 from "./UseReducer/Usereducer2";
 // import Home from "./Rout/Home";
 // import About from "./Rout/About";
 // import Contact from "./Rout/Contact";
@@ -41,19 +42,26 @@ import Usereducer2 from "./UseReducer/Usereducer2";
 // import Usememo from "./Usememo/Usememo";
 // import Usereducer from "./UseReducer/Usereducer";
 function App() {
+  // return ( <
+  //     div className = "sameer" > {
+  //         /* <BrowserRouter>
+  //                 <Header />
+  //                 <Routes>
+  //                   <Route path="/" element={<Home />} />
+  //                   <Route path="/about" element={<About />} />
+  //                   <Route path="/about/:id" element={<Content />} />
+  //                   <Route path="/contact" element={<Contact />} />
+  //                   <Route path="/User:name" element={<User />} />
+  //                 </Routes>
+  //               </BrowserRouter> */
+  //     } <
+  //     Usereducer2 / >
+  //     <
+  //     /div>
+  // );
   return (
-    <div className="sameer">
-      {/* <BrowserRouter>
-        <Header />
-        <Routes>
-          <Route path="/" element={<Home />} />
-          <Route path="/about" element={<About />} />
-          <Route path="/about/:id" element={<Content />} />
-          <Route path="/contact" element={<Contact />} />
-          <Route path="/User:name" element={<User />} />
-        </Routes>
-      </BrowserRouter> */}
-      <Usereducer2 />
+    <div className="app">
+      <Child />
     </div>
   );
 }

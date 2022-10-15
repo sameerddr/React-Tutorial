@@ -83,6 +83,7 @@ function App() {
           </Route>{" "}
         </Routes>{" "}
       </BrowserRouter>{" "} */}
+      <h2>Practice</h2>
     </div>
   );
 }

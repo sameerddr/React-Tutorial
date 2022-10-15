@@ -1,9 +1,9 @@
-import React, { createContext } from "react";
+// import React, { createContext } from "react";
 // import axios from "axios";
 // import { useEffect, useState, useRef, useContext } from "react";
-// import { BrowserRouter, Routes, Route, Link } from "react-router-dom";
+import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 import "./App.css";
-import Child from "./ContextAPI/Child";
+// import Child from "./ContextAPI/Child";
 // import Usereducer2 from "./UseReducer/Usereducer2";
 // import Home from "./Rout/Home";
 // import About from "./Rout/About";
@@ -41,27 +41,48 @@ import Child from "./ContextAPI/Child";
 // import LoginForm from "./LogIn/LoginForm";
 // import Usememo from "./Usememo/Usememo";
 // import Usereducer from "./UseReducer/Usereducer";
+import About from "./Router/About";
+import Contact from "./Router/Contact";
+import Home from "./Router/Home";
+import Navbar from "./Router/Navbar";
+import Services from "./Router/Services";
+import Error from "./Router/Error";
+import User from "./Router/User";
+import Nexting1 from "./Router/Nexting1";
+import Nexting2 from "./Router/N/Nexting2";
+
 function App() {
-  // return ( <
-  //     div className = "sameer" > {
-  //         /* <BrowserRouter>
-  //                 <Header />
-  //                 <Routes>
-  //                   <Route path="/" element={<Home />} />
-  //                   <Route path="/about" element={<About />} />
-  //                   <Route path="/about/:id" element={<Content />} />
-  //                   <Route path="/contact" element={<Contact />} />
-  //                   <Route path="/User:name" element={<User />} />
-  //                 </Routes>
-  //               </BrowserRouter> */
-  //     } <
-  //     Usereducer2 / >
-  //     <
-  //     /div>
-  // );
   return (
-    <div className="app">
-      <Child />
+    <div className="name">
+      {/* <h1> App.JS </h1>{" "}
+      <BrowserRouter>
+        <Navbar />
+        <Routes>
+          <Route path="/home" element={<Home />}>
+            {" "}
+          </Route>{" "}
+          <Route path="/about" element={<About />}>
+            {" "}
+          </Route>{" "}
+          <Route path="/Services" element={<Services />}>
+            {" "}
+          </Route>{" "}
+          <Route path="/*" element={<Error />}>
+            {" "}
+          </Route>{" "}
+          <Route path="/user/:name" element={<User />}>
+            {" "}
+          </Route>{" "}
+          <Route path="/contact/" element={<Contact />}>
+            <Route path="nexting1" element={<Nexting1 />}>
+              {" "}
+            </Route>{" "}
+            <Route path="nexting2" element={<Nexting2 />}>
+              {" "}
+            </Route>{" "}
+          </Route>{" "}
+        </Routes>{" "}
+      </BrowserRouter>{" "} */}
     </div>
   );
 }

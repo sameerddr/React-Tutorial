@@ -95,3 +95,8 @@
 .sameer{
     background-image: ;
 } */
+
+.active {
+    color: white;
+    background-color: black;
+}

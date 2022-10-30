@@ -56,7 +56,11 @@ import Usememo from "./Usememo/Usememo";
 // import Todo from "./TodoWithlocalStorage/Todo";
 
 function App() {
-  // return <div className="name">{/* <Usememo /> */}</div>;
+  return (
+    <div className="name">
+      <Usememo />
+    </div>
+  );
 }
 
 export default App;

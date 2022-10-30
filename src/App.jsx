@@ -1,8 +1,9 @@
-// import React, { createContext } from "react";
+import React, { createContext } from "react";
+import "./App.css";
+import Usememo from "./Usememo/Usememo";
 // import axios from "axios";
 // import { useEffect, useState, useRef, useContext } from "react";
-import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
-import "./App.css";
+// import { BrowserRouter, Routes, Route, Navigate } from "react-router-dom";
 // import Child from "./ContextAPI/Child";
 // import Usereducer2 from "./UseReducer/Usereducer2";
 // import Home from "./Rout/Home";
@@ -41,49 +42,23 @@ import "./App.css";
 // import LoginForm from "./LogIn/LoginForm";
 // import Usememo from "./Usememo/Usememo";
 // import Usereducer from "./UseReducer/Usereducer";
-import About from "./Router/About";
-import Contact from "./Router/Contact";
-import Home from "./Router/Home";
-import Navbar from "./Router/Navbar";
-import Services from "./Router/Services";
-import Error from "./Router/Error";
-import User from "./Router/User";
-import Nexting1 from "./Router/Nexting1";
-import Nexting2 from "./Router/N/Nexting2";
+// import About from "./Router/About";
+// import Contact from "./Router/Contact";
+// import Home from "./Router/Home";
+// import Navbar from "./Router/Navbar";
+// import Services from "./Router/Services";
+// import Error from "./Router/Error";
+// import User from "./Router/User";
+// import Nexting1 from "./Router/Nexting1";
+// import Nexting2 from "./Router/N/Nexting2";
+// import Ecom from "./E-Commerce/Ecom";
+// import UserDetailsComponent from "./ContextAPI/UserDetailsComponent";
+// import Todo from "./TodoWithlocalStorage/Todo";
 
 function App() {
   return (
     <div className="name">
-      {/* <h1> App.JS </h1>{" "}
-      <BrowserRouter>
-        <Navbar />
-        <Routes>
-          <Route path="/home" element={<Home />}>
-            {" "}
-          </Route>{" "}
-          <Route path="/about" element={<About />}>
-            {" "}
-          </Route>{" "}
-          <Route path="/Services" element={<Services />}>
-            {" "}
-          </Route>{" "}
-          <Route path="/*" element={<Error />}>
-            {" "}
-          </Route>{" "}
-          <Route path="/user/:name" element={<User />}>
-            {" "}
-          </Route>{" "}
-          <Route path="/contact/" element={<Contact />}>
-            <Route path="nexting1" element={<Nexting1 />}>
-              {" "}
-            </Route>{" "}
-            <Route path="nexting2" element={<Nexting2 />}>
-              {" "}
-            </Route>{" "}
-          </Route>{" "}
-        </Routes>{" "}
-      </BrowserRouter>{" "} */}
-      <h2>Practice</h2>
+      <Usememo />
     </div>
   );
 }

@@ -6,9 +6,11 @@ function Home() {
   const [search, setsearch] = useState("");
 
   const GetApi = async () => {
-    const Apidata = await axios.get("https://fakestoreapi.com/products");
-    setdata(Apidata.data);
-    console.log(Apidata.data);
+    const Apidata = await axios.get(
+      "https://www.googleapis.com/youtube/v3/search?part=snippet&key=AIzaSyDsL2a4LF6H7icdV9LTM7Ug_82NDD5s78Q&type=video&q=ajax"
+    );
+    setdata(Apidata.data.items);
+    console.log(Apidata.data.items);
   };
 
   useEffect(() => {
@@ -25,23 +27,28 @@ function Home() {
       />
       <div className="container-main">
         {data
-          ?.filter((val) => {
-            if (search == "") {
-              return val;
-            } else if (
-              val.title.toLowerCase().startsWith(search.toLowerCase())
-            ) {
-              return val;
-            }
-          })
-          .map((item) => (
-            <div className="data" key={item.id}>
-              <img src={item.image} className="imagemain" alt="" />
-              <p className="title">{item.title}</p>
-              <p className="category"> Category- {item.category}</p>
+          // ?.filter((val) => {
+          //   if (search == "") {
+          //     return val;
+          //   } else if (
+          //     val.title.toLowerCase().startsWith(search.toLowerCase())
+          //   ) {
+          //     return val;
+          //   }
+          // })
+          ?.map((item) => (
+            <div className="data">
+              {/* <img src={item.image} className="imagemain" alt="" /> */}
+              <h1 className="title"> Etag {item.etag}</h1>
+              <h3 className="title">
+                Channel Title {item.snippet.channelTitle}
+              </h3>
+              <p className="title">{item.snippet.thumbnails.medium.url}</p>
+              <p className="title">{item.snippet.description}</p>
+              {/* <p className="category"> Category- {item.category}</p>
               <p className="desc"> {item.description}</p>
               <p className="price"> Price- {item.price}$</p>
-              <p className="rating"> Rating- {item.rating.rate}</p>
+              <p className="rating"> Rating- {item.rating.rate}</p> */}
             </div>
           ))}
       </div>

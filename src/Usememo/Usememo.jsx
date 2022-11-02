@@ -12,6 +12,10 @@ function Usememo() {
     [count]
   );
 
+  // function apple() {
+  //   console.log("samere");
+  //   return count - 1;
+  // }
   return (
     <>
       <h1>useMemo</h1>

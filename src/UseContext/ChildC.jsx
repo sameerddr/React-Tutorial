@@ -1,12 +1,13 @@
 import React, { useContext } from "react";
-import { data, data1 } from "./ChildA";
+import { data, data1 } from "../App";
 function ChildC() {
   const first = useContext(data);
   const second = useContext(data1);
   return (
     <div>
       <h1>
-        {first} {second}{" "}
+        {first}
+        {second}
       </h1>
     </div>
   );

@@ -8,6 +8,7 @@
 //   function controlhandle() {
 //     inputRef.current.style.color = "red";
 //     inputRef.current.style.backgroundColor = "blue";
+//     inputRef.current.focus();
 //   }
 
 //   return (

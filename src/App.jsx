@@ -58,10 +58,7 @@ import "./App.css";
 // import Todo from "./TodoWithlocalStorage/Todo";
 function App() {
   // useReduce  =  useState
-  var initialvalue = 0;
-  function reducer(count, action) {
-    console.log(count); // InitialValue
-    console.log(action); // Type
+ 
     if (action.type == "increment") {
       return count + 1;
     }

@@ -57,9 +57,6 @@ import "./App.css";
 // import UserDetailsComponent from "./ContextAPI/UserDetailsComponent";
 // import Todo from "./TodoWithlocalStorage/Todo";
 function App() {
-  // useReduce  =  useState
-
-  const [count, dispatch] = useReducer(reducer, initialvalue);
   return <></>;
 }
 

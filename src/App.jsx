@@ -61,8 +61,7 @@ import "./App.css";
 function App() {
   return (
     <>
-      {/* <Notion /> */}
-      <CommentForm />
+      <Notion />
     </>
   );
 }

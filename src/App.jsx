@@ -1,8 +1,8 @@
 import React, { createContext, useState, useRef, useReducer } from "react";
 import { useEffect } from "react";
-import CommentForm from "./Testing/CommentForm";
+// import CommentForm from "./Testing/CommentForm";
 import "./App.css";
-// import Notion from "./Notion/Notion";
+import Notion from "./Notion/Notion";
 // import ChildA from "./UseContext/ChildA";
 // import axios from "axios";
 // import { useEffect, useState, useRef, useContext } from "react";

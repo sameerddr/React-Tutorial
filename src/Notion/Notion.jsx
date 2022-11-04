@@ -4,15 +4,15 @@ function Notion() {
   const [popup, setpopup] = useState(false);
   const [data, setdata] = useState("");
   const [email, setemail] = useState([
-    { name: "Thompson Smith", email: "thompson@gmail.com" },
-    { name: "John Doe", email: "doe@gmail.com" },
-    { name: "Jane Coker", email: "jane@gmail.com" },
-    { name: "Mirabel Ekong", email: "ekong@gmail.com" },
-    { name: "Samuel Doe", email: "samuel@gmail.com" },
-    { name: "Moses Philips", email: "moses@gmail.com" },
-    { name: "Marcus Bowa", email: "marcus@gmail.com" },
-    { name: "Peter Touch", email: "touch@gmail.com" },
-    { name: "Benson Bruce", email: "bruce@gmail.com" },
+    { email: "thompson@gmail.com" },
+    { email: "doe@gmail.com" },
+    { email: "jane@gmail.com" },
+    { email: "ekong@gmail.com" },
+    { email: "samuel@gmail.com" },
+    { email: "moses@gmail.com" },
+    { email: "marcus@gmail.com" },
+    { email: "touch@gmail.com" },
+    { email: "bruce@gmail.com" },
   ]);
   const [emaildata, setemaildata] = useState("");
   function handleClickOpen() {

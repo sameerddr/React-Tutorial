@@ -1,7 +1,8 @@
 import React, { createContext, useState, useRef, useReducer } from "react";
 import { useEffect } from "react";
+import CommentForm from "./Testing/CommentForm";
 import "./App.css";
-// import Usememo from "./Usememo/Usememo";
+// import Notion from "./Notion/Notion";
 // import ChildA from "./UseContext/ChildA";
 // import axios from "axios";
 // import { useEffect, useState, useRef, useContext } from "react";
@@ -56,8 +57,14 @@ import "./App.css";
 // import Ecom from "./E-Commerce/Ecom";
 // import UserDetailsComponent from "./ContextAPI/UserDetailsComponent";
 // import Todo from "./TodoWithlocalStorage/Todo";
+
 function App() {
-  return <></>;
+  return (
+    <>
+      {/* <Notion /> */}
+      <CommentForm />
+    </>
+  );
 }
 
 export default App;

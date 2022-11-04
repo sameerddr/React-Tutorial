@@ -1,16 +1,13 @@
 import React, { useContext } from "react";
 import ChildC from "./ChildC";
 import { data, data1 } from "../App";
-
 function Childb() {
-  const first = useContext(data);
-  const second = useContext(data1);
+  var name = useContext(data);
+  var age = useContext(data1);
   return (
     <div>
-      <h1>
-        {first}
-        {second}
-      </h1>
+      <h1> We are in Child B {name}</h1>
+      <h1>We are in Child B{age}</h1>
       <ChildC></ChildC>
     </div>
   );

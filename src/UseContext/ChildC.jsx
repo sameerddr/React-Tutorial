@@ -7,6 +7,7 @@ function ChildC() {
     <div>
       <h1>
         {first}
+        <br />
         {second}
       </h1>
     </div>

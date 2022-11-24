@@ -63,15 +63,20 @@ import React, {
 // import UserDetailsComponent from "./ContextAPI/UserDetailsComponent";
 // import Todo from "./TodoWithlocalStorage/Todo";
 // import UseState from "./Hooks Revision/UseState";
+// import UseRef from "./Hooks Revision/UseRef";
+// import UseMemo from "./Hooks Revision/UseMemo";
 
 import "./App.css";
-import UseRef from "./Hooks Revision/UseRef";
-
+import UseReduce from "./Hooks Revision/UseReduce";
+import Demo from "./Commentform/Demo";
 function App() {
   return (
     <>
       {/* <UseState /> */}
       {/* <UseRef /> */}
+      {/* <UseMemo /> */}
+      {/* <UseReduce /> */}
+      <Demo />
     </>
   );
 }

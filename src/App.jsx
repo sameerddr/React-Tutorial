@@ -76,6 +76,7 @@ function App() {
       {/* <UseRef /> */}
       {/* <UseMemo /> */}
       {/* <UseReduce /> */}
+      <Demo />
     </>
   );
 }

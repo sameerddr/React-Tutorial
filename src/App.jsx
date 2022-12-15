@@ -67,16 +67,14 @@ import React, {
 // import UseMemo from "./Hooks Revision/UseMemo";
 
 import "./App.css";
-import UseReduce from "./Hooks Revision/UseReduce";
-import Demo from "./Commentform/Demo";
+import Rev_state from "./Hooks 2.0/Rev_state";
+// import UseReduce from "./Hooks Revision/UseReduce";
+// import Demo from "./Commentform/Demo";
 function App() {
   return (
     <>
-      {/* <UseState /> */}
-      {/* <UseRef /> */}
-      {/* <UseMemo /> */}
-      {/* <UseReduce /> */}
-      <Demo />
+      <h1>Sameer Varshney</h1>
+      <Rev_state />
     </>
   );
 }
